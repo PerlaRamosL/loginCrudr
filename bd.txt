@@ -1,0 +1,15 @@
+create database logincrud;
+use logincrud;
+create table usuarios(id int auto_increment,
+		      nombre varchar(50),
+		      a_materno varchar(50),
+                      email varchar(50),
+		      usuario varchar(50),
+		      password text(50),
+		      primary key(id));
+
+create table gastos(id_gasto int auto_increment,
+                    congasto varchar(50),
+                    cantidad int,
+                    fecha date,
+                    primary key(id_gasto));
